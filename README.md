@@ -37,7 +37,7 @@ composer install
 3. Create fake data
 
    ```bash
-   php artisan db:seed --class=CoursesTableSeede
+   php artisan db:seed --class=CoursesTableSeeder
    php artisan db:seed --class=SubjectsTableSeeder
    ```
 
