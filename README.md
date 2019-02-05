@@ -12,6 +12,14 @@ https://lumen.laravel.com/
 
 ## Deployment 
 
+## Clone code and run composer
+
+Enter the root folder and run:
+
+```bash
+composer install
+```
+
 ### Set up database
 
 1. Enter the root folder of the code, create a database.sqlite file in database folder.
@@ -64,5 +72,16 @@ curl -v -X PATCH  -H "Content-Type:application/json" -d '{"hidden":2}' "http://l
 curl -v -X PATCH  -H "Content-Type:application/json" -d '{"hidden":1}' "http://localhost:8000/subjects/1"
 ```
 
+### Run test
+
+Enter the root folder of the code and run:
+
+```bash
+./vendor/bin/phpunit
+```
 
 
+
+## For Api Authentication
+
+One solution is to use the code field as authentication, using md5( name + secretKey) to generate the code. For each request, we can just verify the code.
